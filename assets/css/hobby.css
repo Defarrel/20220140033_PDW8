@@ -1,0 +1,67 @@
+.judul{
+    text-align: center;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.hobby-card {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 30px rgba(8, 66, 102, 0.7);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.hobby-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.hobby-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hobby-card:hover::before {
+    opacity: 1;
+}
+
+.hobby-card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hobby-card-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.hobby-card-content p {
+    font-size: 16px;
+    margin: 0;
+}

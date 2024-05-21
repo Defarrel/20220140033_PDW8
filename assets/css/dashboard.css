@@ -1,0 +1,53 @@
+.judul {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.dashboard-content {
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 20px;
+}
+
+.top-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bottom-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 30px rgba(8, 66, 102, 0.7);
+    width: calc(50% - 10px); 
+    text-align: center;
+}
+
+.bottom-card .card {
+    width: 100%; 
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+}
